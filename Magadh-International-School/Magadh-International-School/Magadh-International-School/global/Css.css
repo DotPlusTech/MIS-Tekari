@@ -1,0 +1,27 @@
+﻿.faculty-info {
+    background-color: rgba(228, 159, 29, 0.95);
+}
+.courses-info {
+    background-color: rgba(48, 46, 96, 0.94);
+}
+.newadmission-info {
+    background-color: rgba(48, 46, 96, 0.94);
+}
+@media only screen and (max-width: 40em) {
+    .logo {
+        text-align: left;
+        margin: auto;
+    }
+    .top-bar-title {
+        position: absolute;
+        right: 0px;
+        top: -55px;
+    }
+    .m0{
+        margin:0px!important;
+    }
+    .msm {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+}

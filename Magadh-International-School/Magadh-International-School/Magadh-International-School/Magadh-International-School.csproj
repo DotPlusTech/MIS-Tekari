@@ -1,0 +1,616 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B52182F-0EAA-4469-942A-1E2A054CAFA1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Magadh_International_School</RootNamespace>
+    <AssemblyName>Magadh-International-School</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloudinaryDotNet, Version=1.10.0.0, Culture=neutral, PublicKeyToken=c8234dc617ae7841, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudinaryDotNet.1.10.0\lib\net45\CloudinaryDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor, Version=2.9.0.207, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.2.9.0\lib\net452\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor.Web, Version=4.12.1.216, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageProcessor.Web.4.12.1\lib\net452\ImageProcessor.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.2.2\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudinaryDotNet.1.10.0\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudinaryDotNet.1.10.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudinaryDotNet.1.10.0\lib\net45\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About-us.aspx" />
+    <Content Include="Acedmic-overview.aspx" />
+    <Content Include="Acedmic.aspx" />
+    <Content Include="admission-procedure.aspx" />
+    <Content Include="Admission.aspx" />
+    <Content Include="AdmissionprocedureSeniorclss.aspx" />
+    <Content Include="ApplyAdmission.aspx" />
+    <Content Include="cbse.aspx" />
+    <Content Include="Comprehensive-Curriculum.aspx" />
+    <Content Include="contact-us.aspx" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\foundation.min.css" />
+    <Content Include="css\lightbox.min.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\owl.video.play.html" />
+    <Content Include="Default.aspx" />
+    <Content Include="director-message.aspx" />
+    <Content Include="Facility.aspx" />
+    <Content Include="Fee-structure.aspx" />
+    <Content Include="fonts\fontawesome-webfont5b62.svg" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="GalleryMaster.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="global\ApplyAdmission.js" />
+    <Content Include="global\BANNER.js" />
+    <Content Include="global\contact.js" />
+    <Content Include="global\Css.css" />
+    <Content Include="global\Enquiry.js" />
+    <Content Include="global\Gallery.js" />
+    <Content Include="global\GalleryDetails.js" />
+    <Content Include="global\Home.js" />
+    <Content Include="global\image\download.png" />
+    <Content Include="global\image\Horizontal.jpg" />
+    <Content Include="global\image\new_icon_blink.gif" />
+    <Content Include="global\image\Pic2.jpg" />
+    <Content Include="global\image\Pic3.jpg" />
+    <Content Include="global\image\Pic4.jpg" />
+    <Content Include="global\image\Refund-blog-cover-1280x720.png" />
+    <Content Include="global\image\thank.gif" />
+    <Content Include="global\image\Untitled-1.png" />
+    <Content Include="global\jquery.easy-ticker.js" />
+    <Content Include="global\script.js" />
+    <Content Include="global\Tc.js" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\6VaW.gif" />
+    <Content Include="images\close.png" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\help\admission.jpg" />
+    <Content Include="images\help\author.png" />
+    <Content Include="images\help\blog1.jpg" />
+    <Content Include="images\help\blog2.jpg" />
+    <Content Include="images\help\blog3.jpg" />
+    <Content Include="images\help\blogthumb.jpg" />
+    <Content Include="images\help\bodybg.jpg" />
+    <Content Include="images\help\businesswoman.png" />
+    <Content Include="images\help\callgirl.png" />
+    <Content Include="images\help\courses.jpg" />
+    <Content Include="images\help\education_bg.jpg" />
+    <Content Include="images\help\eventsbgbk.jpg" />
+    <Content Include="images\help\event_thumb.jpg" />
+    <Content Include="images\help\faculty.jpg" />
+    <Content Include="images\help\first_testimonial.jpg" />
+    <Content Include="images\help\first_testimonial2.jpg" />
+    <Content Include="images\help\gallery1.jpg" />
+    <Content Include="images\help\gallery10.jpg" />
+    <Content Include="images\help\gallery11.jpg" />
+    <Content Include="images\help\gallery12.jpg" />
+    <Content Include="images\help\gallery2.jpg" />
+    <Content Include="images\help\gallery3.jpg" />
+    <Content Include="images\help\gallery4.jpg" />
+    <Content Include="images\help\gallery5.jpg" />
+    <Content Include="images\help\gallery6.jpg" />
+    <Content Include="images\help\gallery7.jpg" />
+    <Content Include="images\help\gallery8.jpg" />
+    <Content Include="images\help\gallery9.jpg" />
+    <Content Include="images\help\graphiccourse.jpg" />
+    <Content Include="images\help\logo.jpg" />
+    <Content Include="images\help\mange_1.jpg" />
+    <Content Include="images\help\mange_2.jpg" />
+    <Content Include="images\help\mange_3.jpg" />
+    <Content Include="images\help\our_staff1.jpg" />
+    <Content Include="images\help\partner1.jpg" />
+    <Content Include="images\help\partner2.jpg" />
+    <Content Include="images\help\partner3.jpg" />
+    <Content Include="images\help\partner4.jpg" />
+    <Content Include="images\help\partner5.jpg" />
+    <Content Include="images\help\partner6.jpg" />
+    <Content Include="images\help\phpcourse.jpg" />
+    <Content Include="images\help\print.jpg" />
+    <Content Include="images\help\product1.jpg" />
+    <Content Include="images\help\product2.jpg" />
+    <Content Include="images\help\product3.jpg" />
+    <Content Include="images\help\product4.jpg" />
+    <Content Include="images\help\slide1.jpg" />
+    <Content Include="images\help\slide2.jpg" />
+    <Content Include="images\help\slide3.jpg" />
+    <Content Include="images\help\staff_1.jpg" />
+    <Content Include="images\help\staff_2.jpg" />
+    <Content Include="images\help\staff_3.jpg" />
+    <Content Include="images\help\teacher1.jpg" />
+    <Content Include="images\help\teacher2.jpg" />
+    <Content Include="images\help\teacher3.jpg" />
+    <Content Include="images\help\teacher4.jpg" />
+    <Content Include="images\help\teacher5.jpg" />
+    <Content Include="images\help\title-bg.jpg" />
+    <Content Include="images\help\web.jpg" />
+    <Content Include="images\home.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\new.gif" />
+    <Content Include="images\newgif.gif" />
+    <Content Include="images\next.png" />
+    <Content Include="images\prev.png" />
+    <Content Include="js\foundation.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\lightbox.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\webful.js" />
+    <Content Include="lib\revolution\assets\coloredbg.png" />
+    <Content Include="lib\revolution\assets\gridtile.png" />
+    <Content Include="lib\revolution\assets\gridtile_3x3.png" />
+    <Content Include="lib\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="lib\revolution\assets\gridtile_white.png" />
+    <Content Include="lib\revolution\assets\loader.gif" />
+    <Content Include="lib\revolution\css\layers.css" />
+    <Content Include="lib\revolution\css\navigation.css" />
+    <Content Include="lib\revolution\css\settings.css" />
+    <Content Include="lib\revolution\fonts\revicons\revicons90c6.svg" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="lib\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="lib\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="lib\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Master.Master" />
+    <Content Include="Mis.asmx" />
+    <Content Include="Partnership-with-parents.aspx" />
+    <Content Include="PrivaicyPolicy.aspx" />
+    <Content Include="RefundAndCancilation.aspx" />
+    <Content Include="SeatAblity.aspx" />
+    <Content Include="Teacher.aspx" />
+    <Content Include="TermsAndCondition.aspx" />
+    <Content Include="TransferCertificate.aspx" />
+    <Content Include="UniformCode.aspx" />
+    <Content Include="VedioGallery.aspx" />
+    <Content Include="WebEnquiry.aspx" />
+    <Content Include="fonts\fontawesome-webfont5b62.eot" />
+    <Content Include="fonts\fontawesome-webfont5b62.ttf" />
+    <Content Include="fonts\fontawesome-webfont5b62.woff" />
+    <Content Include="fonts\fontawesome-webfont5b62.woff2" />
+    <Content Include="fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="lib\revolution\fonts\revicons\revicons90c6.eot" />
+    <Content Include="lib\revolution\fonts\revicons\revicons90c6.ttf" />
+    <Content Include="lib\revolution\fonts\revicons\revicons90c6.woff" />
+    <Content Include="Control\FileUploadHandler.ashx" />
+    <Content Include="config\imageprocessor\security.config" />
+    <Content Include="config\imageprocessor\processing.config" />
+    <Content Include="config\imageprocessor\cache.config" />
+    <Content Include="Control\WebcampHandler.ashx" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Message.aspx" />
+    <Content Include="Methodology.aspx" />
+    <Content Include="Middle Wing.aspx" />
+    <Content Include="mission-vission.aspx" />
+    <Content Include="Our Aim.aspx" />
+    <Content Include="Our Mission.aspx" />
+    <Content Include="Our-logo.aspx" />
+    <Content Include="pre_primarywings.aspx" />
+    <Content Include="primary-wing.aspx" />
+    <Content Include="Senior-Wing.aspx" />
+    <Content Include="style.css" />
+    <Content Include="teacher-training-program.aspx" />
+    <Content Include="Testimonial.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About-us.aspx.cs">
+      <DependentUpon>About-us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About-us.aspx.designer.cs">
+      <DependentUpon>About-us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acedmic-overview.aspx.cs">
+      <DependentUpon>Acedmic-overview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acedmic-overview.aspx.designer.cs">
+      <DependentUpon>Acedmic-overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acedmic.aspx.cs">
+      <DependentUpon>Acedmic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Acedmic.aspx.designer.cs">
+      <DependentUpon>Acedmic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admission-procedure.aspx.cs">
+      <DependentUpon>admission-procedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admission-procedure.aspx.designer.cs">
+      <DependentUpon>admission-procedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admission.aspx.cs">
+      <DependentUpon>Admission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admission.aspx.designer.cs">
+      <DependentUpon>Admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionprocedureSeniorclss.aspx.cs">
+      <DependentUpon>AdmissionprocedureSeniorclss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmissionprocedureSeniorclss.aspx.designer.cs">
+      <DependentUpon>AdmissionprocedureSeniorclss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyAdmission.aspx.cs">
+      <DependentUpon>ApplyAdmission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplyAdmission.aspx.designer.cs">
+      <DependentUpon>ApplyAdmission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse.aspx.cs">
+      <DependentUpon>cbse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cbse.aspx.designer.cs">
+      <DependentUpon>cbse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comprehensive-Curriculum.aspx.cs">
+      <DependentUpon>Comprehensive-Curriculum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comprehensive-Curriculum.aspx.designer.cs">
+      <DependentUpon>Comprehensive-Curriculum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact-us.aspx.cs">
+      <DependentUpon>contact-us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact-us.aspx.designer.cs">
+      <DependentUpon>contact-us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\FileUploadHandler.ashx.cs">
+      <DependentUpon>FileUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\WebcampHandler.ashx.cs">
+      <DependentUpon>WebcampHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="director-message.aspx.cs">
+      <DependentUpon>director-message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="director-message.aspx.designer.cs">
+      <DependentUpon>director-message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facility.aspx.cs">
+      <DependentUpon>Facility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facility.aspx.designer.cs">
+      <DependentUpon>Facility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fee-structure.aspx.cs">
+      <DependentUpon>Fee-structure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fee-structure.aspx.designer.cs">
+      <DependentUpon>Fee-structure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryMaster.aspx.cs">
+      <DependentUpon>GalleryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleryMaster.aspx.designer.cs">
+      <DependentUpon>GalleryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Methodology.aspx.cs">
+      <DependentUpon>Methodology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Methodology.aspx.designer.cs">
+      <DependentUpon>Methodology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Middle Wing.aspx.cs">
+      <DependentUpon>Middle Wing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Middle Wing.aspx.designer.cs">
+      <DependentUpon>Middle Wing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mis.asmx.cs">
+      <DependentUpon>Mis.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mission-vission.aspx.cs">
+      <DependentUpon>mission-vission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mission-vission.aspx.designer.cs">
+      <DependentUpon>mission-vission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Our Aim.aspx.cs">
+      <DependentUpon>Our Aim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Our Aim.aspx.designer.cs">
+      <DependentUpon>Our Aim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Our Mission.aspx.cs">
+      <DependentUpon>Our Mission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Our Mission.aspx.designer.cs">
+      <DependentUpon>Our Mission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Our-logo.aspx.cs">
+      <DependentUpon>Our-logo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Our-logo.aspx.designer.cs">
+      <DependentUpon>Our-logo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Partnership-with-parents.aspx.cs">
+      <DependentUpon>Partnership-with-parents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Partnership-with-parents.aspx.designer.cs">
+      <DependentUpon>Partnership-with-parents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pre_primarywings.aspx.cs">
+      <DependentUpon>pre_primarywings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pre_primarywings.aspx.designer.cs">
+      <DependentUpon>pre_primarywings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="primary-wing.aspx.cs">
+      <DependentUpon>primary-wing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="primary-wing.aspx.designer.cs">
+      <DependentUpon>primary-wing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrivaicyPolicy.aspx.cs">
+      <DependentUpon>PrivaicyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrivaicyPolicy.aspx.designer.cs">
+      <DependentUpon>PrivaicyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefundAndCancilation.aspx.cs">
+      <DependentUpon>RefundAndCancilation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RefundAndCancilation.aspx.designer.cs">
+      <DependentUpon>RefundAndCancilation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SeatAblity.aspx.cs">
+      <DependentUpon>SeatAblity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SeatAblity.aspx.designer.cs">
+      <DependentUpon>SeatAblity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Senior-Wing.aspx.cs">
+      <DependentUpon>Senior-Wing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Senior-Wing.aspx.designer.cs">
+      <DependentUpon>Senior-Wing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacher-training-program.aspx.cs">
+      <DependentUpon>teacher-training-program.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacher-training-program.aspx.designer.cs">
+      <DependentUpon>teacher-training-program.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher.aspx.cs">
+      <DependentUpon>Teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher.aspx.designer.cs">
+      <DependentUpon>Teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAndCondition.aspx.cs">
+      <DependentUpon>TermsAndCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsAndCondition.aspx.designer.cs">
+      <DependentUpon>TermsAndCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testimonial.aspx.cs">
+      <DependentUpon>Testimonial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testimonial.aspx.designer.cs">
+      <DependentUpon>Testimonial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransferCertificate.aspx.cs">
+      <DependentUpon>TransferCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransferCertificate.aspx.designer.cs">
+      <DependentUpon>TransferCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UniformCode.aspx.cs">
+      <DependentUpon>UniformCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UniformCode.aspx.designer.cs">
+      <DependentUpon>UniformCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VedioGallery.aspx.cs">
+      <DependentUpon>VedioGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VedioGallery.aspx.designer.cs">
+      <DependentUpon>VedioGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebEnquiry.aspx.cs">
+      <DependentUpon>WebEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebEnquiry.aspx.designer.cs">
+      <DependentUpon>WebEnquiry.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61705</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61705/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
