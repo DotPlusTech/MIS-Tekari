@@ -31,7 +31,7 @@ function getgallery() {
                         <div class="post">
                             <div class="post-thumb">
                             	<a href="/gallery-photo/`+ d.galleryCode +`">
-	                            	<img src="https://new.schoolcare.in/`+ d.coverImg +`" alt="Mis" style="width:370px;height:245px;">
+	                            	<img src="`+ d.coverImg +`" alt="Mis" style="width:370px;height:245px;">
                                 </a>    
                             </div>
                             <div class="post-content" style="box-shadow: 0 1px 20px rgba(0,0,0,.15)">

@@ -28,8 +28,8 @@ function getgallery() {
                 pnl.append(`
 
 <div class="medium-3 small-12 columns">
-							<a href="https://new.schoolcare.in/`+ d.image + `" data-lightbox="campus-gallery" data-title="Magadh">
-		      		<img class="gallery-thumb gal" src="https://new.schoolcare.in/`+ d.image + `" alt="">
+							<a href="`+ d.image + `" data-lightbox="campus-gallery" data-title="Magadh">
+		      		<img class="gallery-thumb gal" src="`+ d.image + `" alt="">
       			</a>
 
 						</div>`);

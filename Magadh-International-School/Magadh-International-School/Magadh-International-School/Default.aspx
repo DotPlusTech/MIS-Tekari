@@ -299,7 +299,7 @@ background: rgba(169, 164, 164, 0.59);
 z-index: 1001;
 }
 #popup{
-width: 440px;
+width: 540px;
 height: 480PX;
 background: #FFFFFF;
 border: none;
@@ -309,7 +309,7 @@ border-radius: 5px;
 box-shadow: unset;
 
 position: relative;
-top: 130px; left: 35%;
+top: 90px; left: 31%;
 }
         .tp-simpleresponsive img {
             width:100%!important

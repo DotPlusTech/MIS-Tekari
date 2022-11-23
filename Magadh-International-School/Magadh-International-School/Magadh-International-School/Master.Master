@@ -227,7 +227,7 @@
             <!-- Top bar Ends /-->
 
             <!-- Header Starts -->
-            <div class="header">
+            <div class="header"  style="    z-index: 999;">
                 <div class="row" style="max-width: 79rem">
 
                     <div class="medium-2 small-12 columns">
